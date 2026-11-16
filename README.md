@@ -6,6 +6,8 @@ A empresa da tela é fictícia: **Horizonte Fechaduras**, fabricante de chaves, 
 
 Desenvolvido por [Eduardo Mesquita](https://www.linkedin.com/in/engeduardomesquita/).
 
+**[Ver a demo online](https://edumesqg.github.io/sistema_corporativos_ia/)**
+
 [English](#english)
 
 ## O problema
@@ -54,11 +56,11 @@ Se a pessoa disser que o lote já saiu da fábrica e o registro disser o contrá
 
 ## Como abrir
 
-Abra `index.html` no navegador. Não há servidor, instalação nem chave de API. A fonte Inter está em `fonts/`. Nada é carregado de uma CDN.
+A demo já está no ar: [edumesqg.github.io/sistema_corporativos_ia](https://edumesqg.github.io/sistema_corporativos_ia/).
+
+Para abrir nesta pasta, use `index.html` no navegador. Não há servidor, instalação nem chave de API. A fonte Inter está em `fonts/`. Nada é carregado de uma CDN.
 
 Os três roteiros são guiados por cliques. Não há campo livre: a próxima fala já está no botão, e cada botão está em `comandos.md`.
-
-Para publicar no GitHub Pages, sirva a raiz do repositório. A página de entrada é `index.html`.
 
 ## O que foi conferido
 
@@ -92,6 +94,8 @@ Corporate assistant hub, shown as a demo. Each assistant has its own folder, its
 The company on screen is fictional: **Horizonte Fechaduras**, a maker of keys, locks, and key blanks. There is no connected model, no database, and no client data.
 
 Built by [Eduardo Mesquita](https://www.linkedin.com/in/engeduardomesquita/).
+
+**[Open the live demo](https://edumesqg.github.io/sistema_corporativos_ia/)**
 
 ### The problem
 
@@ -139,11 +143,11 @@ If the person says the lot already left the plant and the record says otherwise,
 
 ### How to open it
 
-Open `index.html` in a browser. There is no server, no install, and no API key. The Inter font is in `fonts/`. Nothing is loaded from a CDN.
+The demo is live: [edumesqg.github.io/sistema_corporativos_ia](https://edumesqg.github.io/sistema_corporativos_ia/).
+
+To open this folder locally, use `index.html` in a browser. There is no server, no install, and no API key. The Inter font is in `fonts/`. Nothing is loaded from a CDN.
 
 The three paths are click-guided. There is no free-text box: the next line is already a button, and each button is listed in `comandos.md`.
-
-To publish with GitHub Pages, serve the repository root. The entry page is `index.html`.
 
 ### What was checked
 
