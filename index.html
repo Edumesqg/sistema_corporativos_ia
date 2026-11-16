@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA da Empresa · Hub geral de IAs da empresa</title>
+  <meta name="description" content="Demonstração do hub IA da Empresa: assistentes com contexto, comandos e conhecimento próprios. Empresa fictícia Horizonte Fechaduras." />
+  <link rel="stylesheet" href="fonts/inter.css" />
+  <link rel="stylesheet" href="ia-da-empresa.css" />
+</head>
+<body>
+
+  <nav class="demo-nav">
+    <span class="nav-spacer" aria-hidden="true"></span>
+    <div class="demo-nav-center">
+      Empresa Hipotética <span>|</span> ambiente interno demonstrativo
+    </div>
+    <div class="nav-tools">
+      <span class="demo-badge">IA da Empresa · demo</span>
+      <button class="mob-toggle" id="mob-toggle" type="button" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <div class="brand-row">
+          <div class="brand-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <div class="brand-name">IA da Empresa</div>
+            <div class="brand-sub">Hub geral de IAs da empresa</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sb-nav" aria-label="Navegação principal">
+        <button class="nav-btn active" data-page="home" type="button">
+          <span class="nav-ico">⌂</span><span>Home</span>
+        </button>
+        <button class="nav-btn" data-page="minhas" type="button">
+          <span class="nav-ico">◈</span><span>Minhas IAs</span>
+        </button>
+        <button class="nav-btn" data-page="conhecimento" type="button">
+          <span class="nav-ico">◎</span><span>Conhecimento Corporativo</span>
+        </button>
+        <button class="nav-btn" data-page="normas" type="button">
+          <span class="nav-ico">▣</span><span>Normas &amp; Processos</span>
+        </button>
+        <button class="nav-btn" data-page="estudio" type="button">
+          <span class="nav-ico">◫</span><span>Estúdio de Apresentações</span>
+        </button>
+        <button class="nav-btn nav-cta" data-action="criar-ia" type="button">
+          <span class="nav-ico">+</span><span>Criar nova IA</span>
+        </button>
+        <button class="nav-btn" data-page="governanca" type="button">
+          <span class="nav-ico">◉</span><span>Governança</span>
+        </button>
+        <button class="nav-btn" data-page="config" type="button">
+          <span class="nav-ico">⚙</span><span>Configurações</span>
+        </button>
+      </nav>
+
+      <div class="pillars">
+        <span>Segurança</span><span>Rastreabilidade</span><span>Confiança</span><span>Escala</span>
+      </div>
+
+      <div class="sb-foot">
+        <div class="user-av-wrap">
+          <div class="user-av">EM</div>
+          <span class="online-dot" title="Conectado"></span>
+        </div>
+        <div>
+          <div class="user-nm">Eduardo Mesquita</div>
+          <div class="user-role">Especialista de IA e Inovação</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" id="main">
+
+      <section class="page active" id="page-home" data-page="home">
+        <header class="page-hdr home-hdr">
+          <div>
+            <p class="eyebrow">Empresa hipotética · Horizonte Fechaduras</p>
+            <h1>IA da Empresa</h1>
+            <p class="sub">Hub geral de IAs da empresa</p>
+            <div class="lead-row">
+              <p class="lead">Acesse assistentes especializados, organize contextos e expanda novas aplicações de IA dentro de um único ambiente corporativo.</p>
+              <button class="info-btn" id="btn-sobre" type="button" aria-label="Sobre este ambiente" title="Sobre este ambiente">i</button>
+            </div>
+          </div>
+          <div class="user-chip">
+            <div class="user-av">EM</div>
+            <div>
+              <strong>Eduardo Mesquita</strong>
+              <span>Especialista de IA e Inovação</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="sec-head">
+          <h2>Suas IAs</h2>
+          <p>Um único ambiente. Diferentes IAs. Cada uma com a própria pasta de conhecimento.</p>
+        </div>
+
+        <div class="ia-grid">
+          <article class="ia-card" data-open="conhecimento">
+            <div class="ia-card-top">
+              <div class="ia-ico blue">◎</div>
+              <span class="badge green">Ativa</span>
+            </div>
+            <h3>Conhecimento Corporativo</h3>
+            <p>Consulte a base da Horizonte Fechaduras e receba o SQL do recorte que você definir.</p>
+            <div class="tags">
+              <span>Vendas</span><span>Produção</span><span>Estoque</span><span>Qualidade</span>
+            </div>
+            <div class="ia-card-foot">
+              <span class="muted">Dados gerais · 4 fontes</span>
+              <button type="button" class="btn-primary sm">Abrir</button>
+            </div>
+          </article>
+
+          <article class="ia-card" data-open="normas">
+            <div class="ia-card-top">
+              <div class="ia-ico purple">▣</div>
+              <span class="badge green">Ativa</span>
+            </div>
+            <h3>Normas &amp; Processos</h3>
+            <p>Siga o LQP-014 quando um lote sair do especificado. A resposta traz fonte, responsável e checklist.</p>
+            <div class="tags">
+              <span>Lotes</span><span>Qualidade</span><span>LQP-014</span><span>Checklist</span>
+            </div>
+            <div class="ia-card-foot">
+              <span class="muted">Qualidade · 3 fontes</span>
+              <button type="button" class="btn-primary sm">Abrir</button>
+            </div>
+          </article>
+
+          <article class="ia-card" data-open="estudio">
+            <div class="ia-card-top">
+              <div class="ia-ico cyan">◫</div>
+              <span class="badge green">Ativa</span>
+            </div>
+            <h3>Estúdio de Apresentações</h3>
+            <p>Transforme um briefing informal em um slide com os números e a identidade da casa.</p>
+            <div class="tags">
+              <span>Narrativa</span><span>Slide</span><span>Diretoria</span><span>Briefing</span>
+            </div>
+            <div class="ia-card-foot">
+              <span class="muted">Padrão de narrativa · 3 fontes</span>
+              <button type="button" class="btn-primary sm">Abrir</button>
+            </div>
+          </article>
+
+          <article class="ia-card create" data-action="criar-ia">
+            <div class="ia-ico dashed">+</div>
+            <h3>+ Criar nova IA</h3>
+            <p>Um assistente novo ganha objetivo, pasta de conhecimento, comandos e permissão de publicação.</p>
+            <p class="create-note">As IAs mostradas são o começo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="page-minhas" data-page="minhas">
+        <header class="page-hdr compact">
+          <div>
+            <h1>Minhas IAs</h1>
+            <p class="sub">Assistentes publicados no Hub e disponíveis para o seu perfil.</p>
+          </div>
+          <button type="button" class="btn-primary" data-action="criar-ia">+ Nova IA</button>
+        </header>
+        <div class="ia-grid" id="minhas-mirror"></div>
+      </section>
+
+      <section class="page" id="page-conhecimento" data-page="conhecimento">
+        <header class="page-hdr compact">
+          <div>
+            <div class="crumbs"><button type="button" data-page="home">Hub</button> / Conhecimento Corporativo</div>
+            <h1>Conhecimento Corporativo</h1>
+            <p class="sub">Dados gerais da Horizonte Fechaduras. Um agente, uma base, uma consulta ao final.</p>
+          </div>
+        </header>
+        <div class="cc-layout">
+          <aside class="cc-contexts">
+            <div class="panel-title">Contexto</div>
+            <button class="ctx-item active" type="button">
+              <strong>Dados gerais</strong>
+              <span>Horizonte Fechaduras · 4 fontes</span>
+            </button>
+          </aside>
+
+          <div class="cc-chat" id="cc-main">
+            <div class="chat-hdr mini">
+              <div>
+                <div class="hdr-name">Dados gerais</div>
+                <div class="hdr-status">Contexto ativo · fontes da pasta</div>
+              </div>
+              <div class="src-pills">
+                <span class="spill">Modelo</span><span class="spill">Dicionário</span><span class="spill">Regras</span><span class="spill">SQL</span>
+              </div>
+            </div>
+            <div class="chat-stream" id="cc-stream"><div class="stream-inner" id="cc-stream-inner"></div></div>
+            <div class="chat-composer">
+              <div class="comp-inner">
+                <div class="model-bar">
+                  <label>Modelo
+                    <select class="model-select" aria-label="Modelo de IA">
+                      <option value="preciso">Horizonte Preciso</option>
+                      <option value="direto">Horizonte Direto</option>
+                    </select>
+                  </label>
+                  <span class="model-hint">A pasta de conhecimento é a mesma</span>
+                </div>
+                <div class="chips" id="cc-chips"></div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cc-sources">
+            <div class="panel-title">Fontes conectadas</div>
+            <div id="cc-source-list"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-normas" data-page="normas">
+        <header class="page-hdr compact">
+          <div>
+            <div class="crumbs"><button type="button" data-page="home">Hub</button> / Normas &amp; Processos</div>
+            <h1>Normas &amp; Processos</h1>
+            <p class="sub">Pergunte como o processo funciona. A resposta segue o documento vigente.</p>
+          </div>
+          <button type="button" class="btn-ghost" id="btn-onboarding">Estou começando na área</button>
+        </header>
+        <div class="np-layout">
+          <aside class="np-cats">
+            <div class="panel-title">Categorias</div>
+            <div id="np-cat-list"></div>
+          </aside>
+          <div class="np-main">
+            <div class="chat-stream" id="np-stream"><div class="stream-inner" id="np-stream-inner"></div></div>
+            <div class="chat-composer">
+              <div class="comp-inner">
+                <div class="model-bar">
+                  <label>Modelo
+                    <select class="model-select" aria-label="Modelo de IA">
+                      <option value="preciso">Horizonte Preciso</option>
+                      <option value="direto">Horizonte Direto</option>
+                    </select>
+                  </label>
+                  <span class="model-hint">A pasta de conhecimento é a mesma</span>
+                </div>
+                <div class="chips" id="np-chips"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-estudio" data-page="estudio">
+        <header class="page-hdr compact">
+          <div>
+            <div class="crumbs"><button type="button" data-page="home">Hub</button> / Estúdio de Apresentações</div>
+            <h1>Estúdio de Apresentações</h1>
+            <p class="sub">Do briefing ao slide, no padrão de narrativa da Horizonte.</p>
+          </div>
+        </header>
+        <div class="estudio-layout">
+          <div class="chat-stream" id="es-stream"><div class="stream-inner" id="es-stream-inner"></div></div>
+          <div class="chat-composer">
+            <div class="comp-inner">
+              <div class="model-bar">
+                <label>Modelo
+                  <select class="model-select" aria-label="Modelo de IA">
+                    <option value="preciso">Horizonte Preciso</option>
+                    <option value="direto">Horizonte Direto</option>
+                  </select>
+                </label>
+                <span class="model-hint">A pasta de conhecimento é a mesma</span>
+              </div>
+              <div class="chips" id="es-chips"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-governanca" data-page="governanca">
+        <header class="page-hdr compact">
+          <div>
+            <div class="crumbs"><button type="button" data-page="home">Hub</button> / Governança</div>
+            <h1>Governança da IA</h1>
+            <p class="sub">Quem usou, qual modelo, qual fonte e quanto custou.</p>
+          </div>
+        </header>
+
+        <div class="kpi-strip" id="gov-kpis"></div>
+
+        <div class="gov-grid">
+          <div class="panel">
+            <div class="panel-h">
+              <h2>Uso por IA</h2>
+              <div class="filter-row">
+                <button type="button" class="chip-filter active" data-filter="all">Todas</button>
+                <button type="button" class="chip-filter" data-filter="saudavel">Saudável</button>
+                <button type="button" class="chip-filter" data-filter="revisar">Revisar</button>
+                <button type="button" class="chip-filter" data-filter="baixo">Baixo uso</button>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="dtbl" id="gov-table">
+                <thead>
+                  <tr><th>IA</th><th>Área</th><th>Fontes</th><th>Usuários</th><th>Consultas</th><th>Custo mês</th><th>Status</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Custo de IA por área</h2>
+            <div class="cost-chart" id="cost-chart"></div>
+            <div class="trend-box">
+              <div><strong>Tendência do mês</strong><span class="trend-up">+6,2%</span></div>
+              <p>Aumento concentrado em Dados da Operação.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-h">
+            <h2>Histórico de consulta</h2>
+            <button type="button" class="btn-ghost sm" id="btn-trace">Ver rastreabilidade completa</button>
+          </div>
+          <div class="table-wrap">
+            <table class="dtbl" id="trace-table">
+              <thead>
+                <tr><th>Usuário</th><th>IA</th><th>Pergunta</th><th>Fonte</th><th>Data</th><th>Tokens</th><th>Custo</th><th>Status</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="gov-foot">A empresa sabe quem utilizou a IA, qual modelo respondeu, quais fontes sustentaram a entrega e quanto aquela interação custou.</p>
+        </div>
+      </section>
+
+      <section class="page" id="page-config" data-page="config">
+        <header class="page-hdr compact">
+          <div>
+            <h1>Configurações</h1>
+            <p class="sub">Preferências do ambiente demonstrativo.</p>
+          </div>
+        </header>
+        <div class="config-grid">
+          <div class="panel">
+            <h3>Perfil</h3>
+            <p>Eduardo Mesquita · Especialista de IA e Inovação</p>
+            <p class="muted">Domínio: horizontefechaduras.demo</p>
+          </div>
+          <div class="panel">
+            <h3>Modelos da empresa</h3>
+            <div class="tags">
+              <span>Horizonte Preciso</span><span>Horizonte Direto</span>
+            </div>
+            <p class="muted">Os dois leem a pasta do assistente. O artefato final é o mesmo.</p>
+          </div>
+          <div class="panel">
+            <h3>Pilares permanentes</h3>
+            <div class="tags">
+              <span>Segurança</span><span>Rastreabilidade</span><span>Confiança nos dados</span><span>Escalabilidade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="overlay hidden" id="modal-sobre" role="dialog" aria-modal="true" aria-labelledby="modal-sobre-title">
+    <div class="modal wide">
+      <h2 id="modal-sobre-title">Sobre este ambiente</h2>
+      <p><strong>IA da Empresa</strong> é um conceito de sistema local de inteligência artificial para organizações, desenvolvido por Eduardo Mesquita, com foco na estruturação, execução e controle de atividades com IA generativa.</p>
+      <p>A plataforma permite criar assistentes independentes, cada um com seu próprio projeto, base de conhecimento, contexto e regras de funcionamento. A organização pode escolher os modelos de inteligência artificial que deseja utilizar, mantendo o controle sobre acessos, informações disponibilizadas, fontes utilizadas e custos das interações.</p>
+      <p>Mais do que gerar respostas, a proposta é <strong>orientar a utilização da IA para a execução de atividades e a produção de resultados verificáveis</strong>. Os assistentes podem apoiar desde consultas a bases de dados e elaboração de procedimentos até a construção de documentos e apresentações, utilizando conhecimentos e instruções organizados em um ambiente centralizado.</p>
+      <h3>Por que desenvolvi este projeto?</h3>
+      <p>A arquitetura surgiu como parte da minha pesquisa de mestrado em Administração na ESALQ/USP, na qual investigo <strong>métodos para estruturar e controlar a execução de tarefas complexas com inteligência artificial generativa</strong>.</p>
+      <p>O objetivo é compreender como diferentes formas de organizar o contexto, estruturar instruções, decompor atividades e incorporar mecanismos de verificação podem contribuir para aumentar a confiabilidade dos resultados, reduzir erros e tornar a execução mais eficiente.</p>
+      <p>Este ambiente funciona, portanto, como uma aplicação prática dessas ideias: um espaço para desenvolver, experimentar e avaliar diferentes formas de interação e execução de atividades com IA.</p>
+      <p><strong>O projeto está disponível no GitHub</strong> para quem quiser conhecer, explorar ou utilizar a arquitetura. E, para quem tiver interesse em discutir a proposta, trocar experiências ou explorar possíveis aplicações, fico à disposição para conversar.</p>
+      <p><a class="about-link" href="https://www.linkedin.com/in/engeduardomesquita/" target="_blank" rel="noopener noreferrer">Eduardo Mesquita no LinkedIn</a></p>
+      <button type="button" class="btn-primary" data-close="modal-sobre">Fechar</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="modal-criar" role="dialog" aria-modal="true" aria-labelledby="modal-criar-title">
+    <div class="modal">
+      <h2 id="modal-criar-title">Nova IA</h2>
+      <p>Nesta demonstração, a criação de novas IAs está desabilitada.</p>
+      <p>Em uma implementação real, a pessoa define objetivo, pasta de conhecimento, comandos, regras e quem pode usar o assistente.</p>
+      <div class="pipeline">
+        <span>Objetivo</span><span>→</span><span>Conhecimento</span><span>→</span><span>Comandos</span><span>→</span><span>Regras</span><span>→</span><span>Permissões</span><span>→</span><span>Publicação</span>
+      </div>
+      <button type="button" class="btn-primary" data-close="modal-criar">Entendi</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="modal-chamado" role="dialog" aria-modal="true">
+    <div class="modal sm">
+      <div class="ok-ico">✓</div>
+      <h2>Chamado simulado criado</h2>
+      <p>Protocolo <strong>#IA-20491</strong> encaminhado para a Qualidade de Processo.</p>
+      <button type="button" class="btn-primary" data-close="modal-chamado">Fechar</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="modal-onboarding" role="dialog" aria-modal="true">
+    <div class="modal wide">
+      <h2>Bem-vindo à Qualidade</h2>
+      <p>Vou ajudar você a conhecer o LQP-014, o registro de lote e quem guarda o método na Horizonte Fechaduras.</p>
+      <div class="timeline" id="onb-timeline"></div>
+      <div class="onb-cards" id="onb-cards"></div>
+      <p class="onb-msg">O procedimento escrito tira a dúvida da conversa de corredor e deixa o próximo passo no checklist.</p>
+      <button type="button" class="btn-primary" data-close="modal-onboarding">Começar a explorar</button>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop hidden" id="drawer-backdrop"></div>
+  <aside class="drawer hidden" id="drawer" aria-live="polite">
+    <div class="drawer-h">
+      <h2 id="drawer-title">Detalhe</h2>
+      <button type="button" class="icon-btn" id="drawer-close" aria-label="Fechar">✕</button>
+    </div>
+    <div class="drawer-b" id="drawer-body"></div>
+  </aside>
+
+  <div class="overlay hidden" id="slide-fs" role="dialog" aria-modal="true" aria-label="Slide em tela cheia">
+    <div class="fs-wrap">
+      <button type="button" class="icon-btn light" data-close="slide-fs" aria-label="Fechar">✕</button>
+      <div id="slide-fs-mount"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="ia-da-empresa.js"></script>
+</body>
+</html>
